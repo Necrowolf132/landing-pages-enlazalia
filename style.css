@@ -1,0 +1,298 @@
+@font-face {
+    font-family: 'Aileron';
+    font-style: normal;
+    font-weight: 400;
+    src: url(assets/fonts/Aileron-Regular.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    font-style: normal;
+    font-weight: bold;
+    src: url(assets/fonts/Aileron-Bold.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    font-style: italic;
+    font-weight: 400;
+    src: url(assets/fonts/Aileron-Italic.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    font-style: normal;
+    font-weight: 300;
+    src: url(assets/fonts/Aileron-Light.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    font-style: italic;
+    font-weight: 300;
+    src: url(assets/fonts/Aileron-LightItalic.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    font-style: normal;
+    font-weight: 600;
+    src: url(assets/fonts/Aileron-SemiBold.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    font-style: italic;
+    font-weight: 600;
+    src: url(assets/fonts/Aileron-SemiBoldItalic.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    font-style: normal;
+    font-weight: 100;
+    src: url(assets/fonts/Aileron-UltraLight.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    font-style: italic;
+    font-weight: 100;
+    src: url(assets/fonts/Aileron-UltraLightItalic.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    font-style: italic;
+    font-weight: bold;
+    src: url(assets/fonts/Aileron-BoldItalic.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron-heavy';
+    font-style: normal;
+    src: url(assets/fonts/Aileron-Heavy.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron-heavy';
+    font-style: italic;
+    src: url(assets/fonts/Aileron-HeavyItalic.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron-black';
+    font-style: normal;
+    src: url(assets/fonts/Aileron-Black.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron-black';
+    font-style: italic;
+    src: url(assets/fonts/Aileron-BlackItalic.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    font-family: Aileron, 'Aileron', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.navbar-light .navbar-brand {
+    margin-right: 0px;
+}
+
+.nav-item {
+    color: #6d6d6d;
+    font-family: Aileron-black;
+    font-size: 0.95rem;
+}
+.orangegradiant {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fe8103+12,ffb106+100 */
+   /* Old browsers */
+    background-color: #fe8103;
+    background: -moz-linear-gradient(10deg, #fe8103 36%,#ffb106 86%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(10deg, #fe8103 36%,#ffb106 86%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(10deg, #fe8103 36%,#ffb106 86%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe8103', endColorstr='#ffb106',GradientType=1 );/* IE6-9 fallback on horizontal gradient */
+}
+.containerPru {
+    width: 100%;
+    border: 1px solid red;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: Aileron, 'Alieron';
+    color:white;
+}
+.imageWrap {
+    display: inline-block;
+    position: relative;
+    width: 105%;
+    padding-top: 2.5%;
+    padding-bottom: 7%;
+    vertical-align: top;
+}
+.imageWrap2 {
+    display: block;
+    position: relative;
+    width: 100%;
+    vertical-align: top;
+    background-color:  #1ea5f5e0;
+}
+.fondoImagen1 {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 108%;
+    -webkit-transform: rotate(2.5deg) translate(-6%, -8%);
+    -moz-transform: rotate(2.5deg) translate(-6%, -8%);
+    transform: rotate(2.5deg) translate(-6%, -8%);
+    vertical-align: top;
+}
+
+.fondoImagen1:before {
+    content: "";
+    background-image: url(assets/img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 95%;
+    height: 200%;
+    top: -91%;
+    left: 5%;
+    z-index: -2;
+    -webkit-transform: rotate(-2.5deg);
+    -moz-transform: rotate(-2.5deg);
+    transform: rotate(-2.5deg);
+}
+.ro {
+    -webkit-transform: rotate(-2.5deg);
+    -moz-transform: rotate(-2.5deg);
+    transform: rotate(-2.5deg);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.pic {
+    width: 100%;
+    position: relative;
+}
+.pic > .encabezado1{
+ font-family: Aileron-heavy, 'Aileron-black';
+    font-size: 4.6rem;
+}
+.pic > .texto1{
+    font-size: 1.7rem;
+    width: 67%;
+}
+.pic > .texto1 > span {
+    font-family: Aileron-black, 'Aileron-black ';
+    font-size: 1.7rem;
+}
+.pic > img {
+    width: 25%;
+    margin-bottom: 13px;
+}
+.pic > .button-info{
+    font-family: "Aileron", Aileron;
+    color: #FE940F;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.pic2 .imagendama1 {
+    width: 345px;
+    margin-bottom: 2%;
+}
+.pic2 > p {
+    line-height: 38px;
+    font-size: 2.5rem;
+    width: 39%;
+}
+.pic2 > p > span {
+    font-family: Aileron-black, 'Aileron-black ';
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+}
+
+.encabezado {
+}
+
+@media (min-width: 992px){
+    .barra-lateral {
+        border-left-style: solid;
+        border-left-width: 2px;
+        border-left-color: #6d6d6d;
+        border-color: #6d6d6d;
+    }
+
+    .navbar-nav {
+        transform: translateX(4%);
+    }
+}
+
+@media (max-width: 992px){
+    .navbar-light .navbar-nav .nav-link {
+        background-color: #ec9d30;
+        color: #ffffff;
+        font-weight: bold;
+        transition: all ease-in 0.5s;
+    }
+    .navbar-light .navbar-nav .nav-link:hover {
+        background-color: #f1bb71;
+        border-radius: 50px;
+    }
+    .pic2 > p {
+        line-height: 34px;
+        font-size: 2.2rem;
+        width: 46%;
+    }
+    .pic2 > p > span {
+        font-family: Aileron-black, 'Aileron-black ';
+        letter-spacing: 1px;
+        font-size: 2.2rem;
+    }
+    .pic > .texto1{
+        font-size: 1.7rem;
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px){
+    .pic2 > p {
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 2rem;
+        width: 80%;
+        margin-top: 5%;
+    }
+    .pic2 > p > span {
+        font-family: Aileron-black, 'Aileron-black ';
+        font-size: 2rem;
+    }
+    .fondoImagen1:before {
+        left: 0%;
+    }
+    .pic > .texto1{
+        font-size: 1.7rem;
+        width: 90%;
+    }
+}
