@@ -1,4 +1,4 @@
 $(document).ready(function () {
-    var aqui= $(".containerPru");
+    var aqui= $("#sacar-imagen").offset().top;
     console.log(aqui);
 });
