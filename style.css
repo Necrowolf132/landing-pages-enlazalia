@@ -401,9 +401,74 @@ body {
 #carouselEnlazados .carousel-item  img {
     width: 252px;
 }
-#carouselEnlazados .carousel-item img.linea {
-
+#carouselEnlazados .carousel-indicators {
+    position: relative;
+    padding-top: 13px;
 }
+#carouselEnlazados .carousel-indicators li {
+    width: 7px;
+    height: 7px;
+    margin-right: 14px;
+    margin-left: 14px;
+    opacity: 5;
+    border: 3px solid #05A5Eb !important;
+    border-radius: 100%;
+}
+#carouselEnlazados .carousel-indicators .active {
+    background-color: #05A5Eb;
+}
+.marcas1 img, .marcas2 img {
+    margin-left: 3.7vw;
+    margin-right: 3.7vw;
+}
+.marcas1 img:nth-child(1) {
+    width: 117px;
+}
+.marcas1 img:nth-child(2) {
+    width: 72px;
+}
+.marcas2 img:nth-child(1) {
+    width: 111px
+}
+.marcas2 img:nth-child(2) {
+    width: 113px;
+}
+.section-porsi {
+    background-color: #f7f7f7;
+    font-family: Aileron, 'Alieron';
+    font-weight: normal;
+    padding-top: 67px
+}
+.section-porsi h2 {
+    color: #0DA5E4;
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-bottom: 12px;
+}
+.section-porsi p {
+    width: 61%;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 24px;
+}
+.imagenmano1 img {
+    width: 41.5vw;
+    position: relative;
+    z-index: 3;
+}
+.bajo-mano1 {
+    background-color: #CDE9F5;
+    font-family: Aileron, 'Alieron';
+    font-weight: normal;
+    position: relative;
+    z-index: 0;
+    margin-top: -80px;
+}
+.bajo-mano1 h2 {
+    color: #000000;
+    font-weight: bold;
+}
+
 @media (min-width: 1100px){
     .pic2 > p {
         padding-right: 32px;
@@ -413,7 +478,14 @@ body {
         margin-left: 51px;
     }
 }
-
+@media only screen and (max-width: 1200px) and (min-width: 1000px){
+    .section-porsi p {
+        width: 70%;
+    }
+    .bajo-mano1 {
+        margin-top: -40px;
+    }
+}
 @media (min-width: 992px){
     .barra-lateral {
         border-left-style: solid;
@@ -474,6 +546,9 @@ body {
     .SeccionDos .pic > .texto1 {
         width: 76%;
     }
+    .section-porsi p {
+        width: 94%;
+    }
 }
 
 @media (max-width: 768px){
@@ -510,5 +585,11 @@ body {
     }
     .fondoImagen1-backgound {
         background-position: center 62px;
+    }
+}
+@media (max-width: 270px){
+    .marcas1 img, .marcas2 img {
+        margin-left: 2px !important;
+        margin-right: 2px !important;
     }
 }
