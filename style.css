@@ -111,6 +111,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+    background-color: #f7f7f7;
 }
 
 .navbar-light .navbar-brand {
@@ -206,22 +207,6 @@ body {
     vertical-align: top;
 }
 
-/*.fondoImagen1:before {
-    content: "";
-    background-image: url(assets/img/fondo1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    width: 95%;
-    height: 200%;
-    top: -91%;
-    left: 5%;
-    z-index: -2;
-    -webkit-transform: rotate(-2.5deg);
-    -moz-transform: rotate(-2.5deg);
-    transform: rotate(-2.5deg);
-} */
 .fondoImagen1-backgound {
     background-image: url(assets/img/fondo1.jpg);
     background-repeat: no-repeat;
@@ -265,6 +250,7 @@ body {
     width: 108%;
     position: relative;
 }
+
 .SeccionDos .pic {
     width: 106%;
     position: relative;
@@ -345,24 +331,28 @@ body {
     z-index: 2;
     position: relative;
 }
+
 .Section2 h3 {
     font-family: Aileron, 'Alieron';
-    color:#656565;
+    color: #656565;
     font-weight: 600;
     font-size: 1.6rem;
 }
+
 .Section2 h3 > span {
     font-family: Aileron-black, 'Aileron-black';
-    color:black;
+    color: black;
     font-weight: 600;
     font-size: 1.6rem;
 }
+
 .Section2 h1 {
     font-family: Aileron, 'Aileron';
     color: #f34c03;
     font-weight: 600;
     font-size: 1.9rem;
- }
+}
+
 .Section2 sub {
     font-family: Aileron, 'Aileron';
     color: black;
@@ -370,6 +360,7 @@ body {
     font-size: 1rem;
     bottom: 0px;
 }
+
 .Section2 sub {
     font-family: Aileron, 'Aileron';
     color: black;
@@ -377,6 +368,7 @@ body {
     font-size: 1rem;
     bottom: 0px;
 }
+
 .Section2 cite {
     font-family: Aileron, 'Aileron';
     color: #656565;
@@ -385,26 +377,34 @@ body {
     line-height: 27px;
     width: 86%;
 }
-.Section2  .carousel-control-prev-icon, .Section2 .carousel-control-next-icon {
+
+.Section2  .carousel-control-prev-icon,
+.Section2 .carousel-control-next-icon {
     width: 18px;
     height: 34px;
 }
+
 .Section2 .carousel-control-next-icon {
     background-image: url("assets/img/fechaDerecha.png") !important;
 }
+
 .Section2  .carousel-control-prev-icon {
     background-image: url("assets/img/fechaIzquierda.png") !important;
 }
+
 #carouselEnlazados .carousel-item {
     background-color: #f7f7f7;
 }
+
 #carouselEnlazados .carousel-item  img {
     width: 252px;
 }
+
 #carouselEnlazados .carousel-indicators {
     position: relative;
     padding-top: 13px;
 }
+
 #carouselEnlazados .carousel-indicators li {
     width: 7px;
     height: 7px;
@@ -414,48 +414,60 @@ body {
     border: 3px solid #05A5Eb !important;
     border-radius: 100%;
 }
+
 #carouselEnlazados .carousel-indicators .active {
     background-color: #05A5Eb;
 }
-.marcas1 img, .marcas2 img {
+
+.marcas1 img,
+.marcas2 img {
     margin-left: 3.7vw;
     margin-right: 3.7vw;
 }
+
 .marcas1 img:nth-child(1) {
     width: 117px;
 }
+
 .marcas1 img:nth-child(2) {
     width: 72px;
 }
+
 .marcas2 img:nth-child(1) {
-    width: 111px
+    width: 111px;
 }
+
 .marcas2 img:nth-child(2) {
     width: 113px;
 }
+
 .section-porsi {
     background-color: #f7f7f7;
     font-family: Aileron, 'Alieron';
     font-weight: normal;
-    padding-top: 67px
+    padding-top: 67px;
 }
+
 .section-porsi h2 {
     color: #0DA5E4;
     font-weight: bold;
     font-size: 1.7rem;
     margin-bottom: 12px;
 }
+
 .section-porsi p {
     width: 61%;
     font-size: 0.8rem;
     font-weight: 500;
     line-height: 24px;
 }
+
 .imagenmano1 img {
     width: 41.5vw;
     position: relative;
     z-index: 3;
 }
+
 .bajo-mano1 {
     background-color: #CDE9F5;
     font-family: Aileron, 'Alieron';
@@ -464,9 +476,140 @@ body {
     z-index: 0;
     margin-top: -80px;
 }
+
 .bajo-mano1 h2 {
     color: #000000;
     font-weight: bold;
+}
+
+.bajo-mano1 li {
+    line-height: 35px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #2C3844;
+}
+
+.bajo-mano1 .fas {
+    margin-right: 5px;
+    color: #F77C01;
+    font-size: 1rem;
+}
+.section-mano2 {
+    background-color: #36B8F4;
+}
+.section-mano2 img {
+    width: 41vw;
+    margin-left: -3px;
+}
+.section-mano2 h1, .section-mano2 h2, .section-mano2 p{
+    width: 89%;
+    color: #ffffff;
+    font-family: Aileron, 'Alieron';
+    transform: translateX(-7%);
+}
+.section-mano2 h1 {
+    font-weight: bold;
+    font-size: 2.17rem;
+}
+.section-mano2 h2 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 32px;
+}
+.section-mano2 p {
+    line-height: 27px;
+}
+.section-razones {
+    background-color: #f7f7f7;
+    font-family: Aileron, 'Alieron';
+    font-weight: normal;
+}
+.section-razones .primeros-titulos h3 {
+    font-weight: 700;
+}
+.section-razones h2 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+.section-razones h2 > span {
+    font-weight: 600;
+}
+
+.section-razones .primeros-titulos h4 > span {
+    font-weight: 700;
+}
+.section-razones .primeros-titulos h4 {
+    font-size: 1.1rem ;
+    line-height: 21px;
+}
+.lista-razones {
+    width: 33.7%;
+}
+.lista-razones dl {
+    min-height: 169px;
+}
+.lista-razones dt {
+    color: #FE9100;
+    font-weight: bold;
+    font-size: 1.45rem;
+    line-height: 24px;
+}
+.lista-razones dt > i {
+    font-size: 1rem;
+}
+.lista-razones dd {
+    font-weight: 500;
+    font-size: 0.98rem;
+    line-height: 19px;
+}
+.lista-razones.ladoA {
+    border-right: #FE9100 solid 1px;
+}
+.lista-razones.ladoB {
+    border-left: #FE9100 solid 1px;
+}
+.titulosnaranja {
+    background-color: #FF8A00;
+}
+.titulosnaranja h2 {
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.titulosnaranja h2 > span{
+    display: block;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.imgnumero {
+    width: 117px;
+}
+.numeros-porque h3 {
+    color: #31BEE8;
+    font-weight: bold;
+    font-size: 1.7rem;
+    line-height: 30px;
+}
+.numeros-porque p {
+    color: #6A6A6A;
+    font-size: 1.05rem;
+    line-height: 21px;
+}
+.section-packet h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color:#383838;
+    line-height: 31px;
+}
+.section-packet h2 > span:nth-child(1) {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.section-packet h2 > span:nth-child(2) {
+    font-family: Aileron-black, 'Aileron-black';
+    font-size: 1.6rem;
 }
 
 @media (min-width: 1100px){
@@ -477,15 +620,22 @@ body {
     .SeccionDos .pic2 > p {
         margin-left: 51px;
     }
+    .section-mano2 h1, .section-mano2 h2, .section-mano2 p{
+        width: 81%;
+        transform: translateX(-15%)
+    }
 }
+
 @media only screen and (max-width: 1200px) and (min-width: 1000px){
     .section-porsi p {
         width: 70%;
     }
+
     .bajo-mano1 {
         margin-top: -40px;
     }
 }
+
 @media (min-width: 992px){
     .barra-lateral {
         border-left-style: solid;
@@ -507,6 +657,7 @@ body {
     .SeccionDos .pic2 > p {
         margin-top: 52px;
     }
+
 }
 
 @media (max-width: 992px){
@@ -542,12 +693,14 @@ body {
         font-size: 1.7rem;
         width: 75%;
     }
-
     .SeccionDos .pic > .texto1 {
         width: 76%;
     }
     .section-porsi p {
         width: 94%;
+    }
+    .lista-razones {
+        width: 40%;
     }
 }
 
@@ -555,10 +708,12 @@ body {
     .imageWrap {
         padding-bottom: 29px;
     }
+
     .pic {
         width: 110% !important;
         position: relative;
     }
+
     .pic2 > p {
         letter-spacing: 1px;
         line-height: 28px;
@@ -580,15 +735,51 @@ body {
     .SeccionDos .pic > .texto1 {
         width: 76%;
     }
+
     .SeccionDos .pic > .button-info {
         font-size: 1rem;
     }
+
     .fondoImagen1-backgound {
         background-position: center 62px;
     }
+    .section-mano2 img {
+        width: 100%;
+    }
+    .section-mano2 .imagenmano1 {
+        width: 100%;
+    }
+    .section-mano2 h1 {
+        font-size: 2rem;
+    }
+    .lista-razones.ladoA, .lista-razones.ladoB  {
+        border:none;
+    }
+    .lista-razones {
+        width: 80%;
+    }
+    .lista-razones dl {
+        min-height: 0px;
+    }
 }
+@media (max-width: 570px) {
+    .section-mano2 h1, .section-mano2 h2, .section-mano2 p{
+        transform: translateX(0%);
+    }
+    .section-mano2 h1 {
+        font-size: 1.8rem;
+    }
+    .section-mano2 h2{
+        font-size: 1rem;
+    }
+    .lista-razones {
+        width: 90%;
+    }
+}
+
 @media (max-width: 270px){
-    .marcas1 img, .marcas2 img {
+    .marcas1 img,
+    .marcas2 img {
         margin-left: 2px !important;
         margin-right: 2px !important;
     }
