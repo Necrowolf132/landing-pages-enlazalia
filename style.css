@@ -611,6 +611,26 @@ body {
     font-family: Aileron-black, 'Aileron-black';
     font-size: 1.6rem;
 }
+.panel-paquete {
+    background-color: #F7F7F7;
+    border: #01A4E7 solid 2.5px;
+    border-radius: 10px;
+}
+.panel-paquete li {
+    text-align: center;
+
+}
+.panel-paquete > i {
+    color: #0096DB;
+}
+.panel-paquete li > i {
+    color: #F38D0A;
+}
+.panel-paquete span {
+    background-color: #00A9EC;
+    padding: 2px 4px 2px 4px;
+    color: #F7F7F7;
+}
 
 @media (min-width: 1100px){
     .pic2 > p {
