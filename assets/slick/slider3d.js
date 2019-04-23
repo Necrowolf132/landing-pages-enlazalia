@@ -23,8 +23,8 @@ var sliderMyteam = (function(document, $) {
             $active.parent().prev().find('figure').addClass('previo');
             $active.parent().next().addClass('nuevo');
             $list.css({
-                'margin-left': ~~((100 / $nView)-3) + '%',
-                'width': ~~(100 * ($nItems / $nView)) + '%',
+                'margin-left': ~~((100 / $nView)-4) + '%',
+                'width': ~~((100 * ($nItems / $nView))+7) + '%',
                 'padding-top':'10px',
                 'padding-bottom':'10px'
             });

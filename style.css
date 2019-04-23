@@ -622,14 +622,105 @@ body {
 }
 .panel-paquete > i {
     color: #0096DB;
+    font-size: 5.4rem;
 }
 .panel-paquete li > i {
     color: #F38D0A;
+    margin-right: 8px;
+    font-size: 2rem;
 }
 .panel-paquete span {
     background-color: #00A9EC;
-    padding: 2px 4px 2px 4px;
+    padding: 0px 12.5px 0px 12.5px;
     color: #F7F7F7;
+    border-radius: 8px;
+    font-size: 1.65rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: 31px;
+}
+.button-info2 {
+    font-family: Aileron-black, 'Aileron-black ';
+    color: #fefbf5;
+    background-color: #FF6D00;
+    font-size: 2.25rem;
+    font-weight: bold;
+    border: none;
+    padding: 0px 55px 0px 55px;
+    border-radius: 10px;
+    line-height: 52px;
+}
+.nini-info h3 {
+    color: #6F6F6F;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+.dudas h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.dudas  p {
+    font-size: 1.08rem;
+}
+.dudas ul > li {
+    color: #6F6F6F;
+    text-align: justify;
+    line-height: 29px;
+    font-size: 1.19rem;
+    font-weight: 600;
+    margin-bottom: 36px;
+    margin-left: -5%
+}
+.container-blue {
+    border-style: dotted;
+    border-width: 4px;
+    border-color: #49C6FD;
+    border-radius: 10px;
+}
+.container-blue h2 {
+    color: #0aa4de;
+    font-weight: 800;
+    font-size: 2.1rem;
+}
+.container-pink {
+    border-style: dotted;
+    border-width: 4px;
+    border-color: #ec7081;
+    border-radius: 10px;
+}
+.container-pink h2 {
+    color: #fc4d60;
+    font-weight: 800;
+    font-size: 2.1rem;
+}
+.significado-boton {
+    background-color: #3FBBEE;
+    width: 61%;
+    max-width: 870px;
+    border-radius: 6px;
+}
+.significado-boton > h3 {
+    color: #FBFEF8;
+    font-size: 2.1rem;
+    line-height: 35px;
+}
+.significado-boton > p {
+    color: #FBFEF8;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 23px;
+}
+.significado-boton .button-info {
+    font-family: Aileron-black, 'Aileron-black ';
+    color: black;
+    background-color: #F3AE00;
+    font-size: 1.34rem;
+    font-weight: bold;
+    border: none;
+    padding: 6px 0px 6px 0px;
+    border-radius: 12px;
+    line-height: 24px;
+    box-shadow: 0px 0px 48px 1px #F3AE00;
 }
 
 @media (min-width: 1100px){
@@ -722,6 +813,9 @@ body {
     .lista-razones {
         width: 40%;
     }
+    .significado-boton {
+        width: 80%;
+    }
 }
 
 @media (max-width: 768px){
@@ -781,6 +875,9 @@ body {
     .lista-razones dl {
         min-height: 0px;
     }
+    .significado-boton {
+        width: 90%;
+    }
 }
 @media (max-width: 570px) {
     .section-mano2 h1, .section-mano2 h2, .section-mano2 p{
@@ -794,6 +891,11 @@ body {
     }
     .lista-razones {
         width: 90%;
+    }
+    .button-info2 {
+        font-size: 1.8rem;
+        padding: 5px 0px 7px 0px;
+        line-height: 25px;
     }
 }
 
