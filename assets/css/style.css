@@ -1,0 +1,958 @@
+@font-face {
+    font-family: 'Aileron';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/Aileron-Regular.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    font-style: normal;
+    font-weight: bold;
+    src: url(fonts/Aileron-Bold.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    font-style: italic;
+    font-weight: 400;
+    src: url(fonts/Aileron-Italic.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    font-style: normal;
+    font-weight: 300;
+    src: url(fonts/Aileron-Light.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    font-style: italic;
+    font-weight: 300;
+    src: url(fonts/Aileron-LightItalic.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    font-style: normal;
+    font-weight: 600;
+    src: url(fonts/Aileron-SemiBold.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    font-style: italic;
+    font-weight: 600;
+    src: url(fonts/Aileron-SemiBoldItalic.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    font-style: normal;
+    font-weight: 100;
+    src: url(fonts/Aileron-UltraLight.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    font-style: italic;
+    font-weight: 100;
+    src: url(fonts/Aileron-UltraLightItalic.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    font-style: italic;
+    font-weight: bold;
+    src: url(fonts/Aileron-BoldItalic.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron-heavy';
+    font-style: normal;
+    src: url(fonts/Aileron-Heavy.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron-heavy';
+    font-style: italic;
+    src: url(fonts/Aileron-HeavyItalic.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron-black';
+    font-style: normal;
+    src: url(fonts/Aileron-Black.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Aileron-black';
+    font-style: italic;
+    src: url(fonts/Aileron-BlackItalic.otf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+    font-family: Aileron, 'Aileron', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+}
+
+.navbar-light .navbar-brand {
+    margin-right: 0px;
+}
+
+.nav-item {
+    color: #6d6d6d;
+    font-family: Aileron-black;
+    font-size: 0.95rem;
+}
+
+.orangegradiant {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fe8103+12,ffb106+100 */
+    /* Old browsers */
+    background-color: #fe8103;
+    background: -moz-linear-gradient(10deg, #fe8103 17%,#ffb106 86%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(10deg, #fe8103 17%,#ffb106 86%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(10deg, #fe8103 17%,#ffb106 86%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe8103', endColorstr='#ffb106',GradientType=1 );
+
+    /* IE6-9 fallback on horizontal gradient */
+    -webkit-transform: rotate(2.5deg) translate(-6%, -10%);
+    -moz-transform: rotate(2.5deg) translate(-6%, -10%);
+    transform: rotate(2.5deg) translate(-6%, -10%);
+    width: 108%;
+}
+
+.bluegradiant2 {
+    background-color: #16b2fc;
+    -webkit-transform: rotate(4.5deg) translate(-6%, -48px);
+    -moz-transform: rotate(4.5deg) translate(-6%, -48px);
+    transform: rotate(4.5deg) translate(-6%, -48px);
+    width: 108%;
+    position: relative;
+    z-index: -2;
+}
+
+.containerPru {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: Aileron, 'Alieron';
+    color: white;
+}
+
+.SeccionDos {
+    -webkit-transform: translateY(-71px);
+    -moz-transform: translateY(-71px);
+    transform: translateY(-71px);
+}
+
+.imageWrap {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-top: 61px;
+    padding-bottom: 32px;
+    vertical-align: top;
+}
+
+.SeccionDos .imageWrap {
+    width: 98%;
+    padding-top: 40px;
+}
+
+.imageWrap2 {
+    display: block;
+    position: relative;
+    width: 100%;
+    vertical-align: top;
+    background-color: #1ea5f5e0;
+    padding-top: 27px;
+}
+
+.SeccionDos .imageWrap2 {
+    display: block;
+    position: relative;
+    width: 100%;
+    vertical-align: top;
+    background-color: #ff8001e0;
+    padding-top: 16px;
+}
+
+.fondoImagen1 {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 108%;
+    -webkit-transform: rotate(2.5deg) translate(-6%, -8%);
+    -moz-transform: rotate(2.5deg) translate(-6%, -8%);
+    transform: rotate(2.5deg) translate(-6%, -8%);
+    vertical-align: top;
+}
+
+.fondoImagen1-backgound {
+    background-image: url(img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    z-index: -2;
+    -webkit-transform: translateY(-60px);
+    -moz-transform: translateY(-60px);
+    transform: translateY(-60px);
+}
+
+.fondoImagen2-backgound {
+    background-image: url(img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-position: center 70px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    z-index: -2;
+}
+
+.ro {
+    -webkit-transform: rotate(-2.5deg);
+    -moz-transform: rotate(-2.5deg);
+    transform: rotate(-2.5deg);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.SeccionDos .ro {
+    -webkit-transform: rotate(-4.5deg);
+    -moz-transform: rotate(-4.5deg);
+    transform: rotate(-4.5deg);
+}
+
+.pic {
+    width: 108%;
+    position: relative;
+}
+
+.SeccionDos .pic {
+    width: 106%;
+    position: relative;
+}
+
+.pic > .encabezado1 {
+    font-family: Aileron-heavy, 'Aileron-black';
+    font-size: 5rem;
+}
+
+.SeccionDos .pic > .texto1 {
+    font-size: 1.55rem;
+    width: 48%;
+    line-height: 34px;
+}
+
+.pic > .texto1 {
+    font-size: 1.7rem;
+    width: 51%;
+    line-height: 26px;
+}
+
+.pic > .texto1 > span {
+    font-family: Aileron-black, 'Aileron-black ';
+    font-size: 1.7rem;
+}
+
+.pic > img {
+    width: 25%;
+    margin-bottom: 13px;
+}
+
+.pic > .button-info {
+    font-family: "Aileron", Aileron;
+    color: #FE940F;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.SeccionDos .pic > .button-info {
+    font-family: Aileron-black, 'Aileron-black ';
+    color: #fefbf5;
+    background-color: #FC8C1E;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+}
+
+.pic2 .imagendama1 {
+    width: 345px;
+    margin-bottom: 8px;
+}
+
+.pic2 .imagendama2 {
+    margin-bottom: 13px;
+    width: 258px;
+}
+
+.pic2 > p {
+    line-height: 38px;
+    font-size: 2.5rem;
+    width: 45%;
+}
+
+.pic2 > p > span {
+    font-family: Aileron-black, 'Aileron-black ';
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+}
+
+.SeccionDos .pic2 > p {
+    padding-right: 0px;
+}
+
+.Section2 {
+    background-color: #f7f7f7;
+    margin-top: -173px;
+    z-index: 2;
+    position: relative;
+}
+
+.Section2 h3 {
+    font-family: Aileron, 'Alieron';
+    color: #656565;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.Section2 h3 > span {
+    font-family: Aileron-black, 'Aileron-black';
+    color: black;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.Section2 h1 {
+    font-family: Aileron, 'Aileron';
+    color: #f34c03;
+    font-weight: 600;
+    font-size: 1.9rem;
+}
+
+.Section2 sub {
+    font-family: Aileron, 'Aileron';
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    bottom: 0px;
+}
+
+.Section2 sub {
+    font-family: Aileron, 'Aileron';
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    bottom: 0px;
+}
+
+.Section2 cite {
+    font-family: Aileron, 'Aileron';
+    color: #656565;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 27px;
+    width: 86%;
+}
+
+.Section2  .carousel-control-prev-icon,
+.Section2 .carousel-control-next-icon {
+    width: 18px;
+    height: 34px;
+}
+
+.Section2 .carousel-control-next-icon {
+    background-image: url("img/fechaDerecha.png") !important;
+}
+
+.Section2  .carousel-control-prev-icon {
+    background-image: url("img/fechaIzquierda.png") !important;
+}
+
+#carouselEnlazados .carousel-item {
+    background-color: #f7f7f7;
+}
+
+#carouselEnlazados .carousel-item  img {
+    width: 252px;
+}
+
+#carouselEnlazados .carousel-indicators {
+    position: relative;
+    padding-top: 13px;
+}
+
+#carouselEnlazados .carousel-indicators li {
+    width: 7px;
+    height: 7px;
+    margin-right: 14px;
+    margin-left: 14px;
+    opacity: 5;
+    border: 3px solid #05A5Eb !important;
+    border-radius: 100%;
+}
+
+#carouselEnlazados .carousel-indicators .active {
+    background-color: #05A5Eb;
+}
+
+.marcas1 img,
+.marcas2 img {
+    margin-left: 3.7vw;
+    margin-right: 3.7vw;
+}
+
+.marcas1 img:nth-child(1) {
+    width: 117px;
+}
+
+.marcas1 img:nth-child(2) {
+    width: 72px;
+}
+
+.marcas2 img:nth-child(1) {
+    width: 111px;
+}
+
+.marcas2 img:nth-child(2) {
+    width: 113px;
+}
+
+.section-porsi {
+    background-color: #f7f7f7;
+    font-family: Aileron, 'Alieron';
+    font-weight: normal;
+    padding-top: 67px;
+}
+
+.section-porsi h2 {
+    color: #0DA5E4;
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-bottom: 12px;
+}
+
+.section-porsi p {
+    width: 61%;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.imagenmano1 img {
+    width: 41.5vw;
+    position: relative;
+    z-index: 3;
+}
+
+.bajo-mano1 {
+    background-color: #CDE9F5;
+    font-family: Aileron, 'Alieron';
+    font-weight: normal;
+    position: relative;
+    z-index: 0;
+    margin-top: -80px;
+}
+
+.bajo-mano1 h2 {
+    color: #000000;
+    font-weight: bold;
+}
+
+.bajo-mano1 li {
+    line-height: 35px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #2C3844;
+}
+
+.bajo-mano1 .fas {
+    margin-right: 5px;
+    color: #F77C01;
+    font-size: 1rem;
+}
+.section-mano2 {
+    background-color: #36B8F4;
+}
+.section-mano2 img {
+    width: 41vw;
+    margin-left: -3px;
+}
+.section-mano2 h1, .section-mano2 h2, .section-mano2 p{
+    width: 89%;
+    color: #ffffff;
+    font-family: Aileron, 'Alieron';
+    transform: translateX(-7%);
+}
+.section-mano2 h1 {
+    font-weight: bold;
+    font-size: 2.17rem;
+}
+.section-mano2 h2 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 32px;
+}
+.section-mano2 p {
+    line-height: 27px;
+}
+.section-razones {
+    background-color: #f7f7f7;
+    font-family: Aileron, 'Alieron';
+    font-weight: normal;
+}
+.section-razones .primeros-titulos h3 {
+    font-weight: 700;
+}
+.section-razones h2 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+.section-razones h2 > span {
+    font-weight: 600;
+}
+
+.section-razones .primeros-titulos h4 > span {
+    font-weight: 700;
+}
+.section-razones .primeros-titulos h4 {
+    font-size: 1.1rem ;
+    line-height: 21px;
+}
+.lista-razones {
+    width: 33.7%;
+}
+.lista-razones dl {
+    min-height: 169px;
+}
+.lista-razones dt {
+    color: #FE9100;
+    font-weight: bold;
+    font-size: 1.45rem;
+    line-height: 24px;
+}
+.lista-razones dt > i {
+    font-size: 1rem;
+}
+.lista-razones dd {
+    font-weight: 500;
+    font-size: 0.98rem;
+    line-height: 19px;
+}
+.lista-razones.ladoA {
+    border-right: #FE9100 solid 1px;
+}
+.lista-razones.ladoB {
+    border-left: #FE9100 solid 1px;
+}
+.titulosnaranja {
+    background-color: #FF8A00;
+}
+.titulosnaranja h2 {
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.titulosnaranja h2 > span{
+    display: block;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.imgnumero {
+    width: 117px;
+}
+.numeros-porque h3 {
+    color: #31BEE8;
+    font-weight: bold;
+    font-size: 1.7rem;
+    line-height: 30px;
+}
+.numeros-porque p {
+    color: #6A6A6A;
+    font-size: 1.05rem;
+    line-height: 21px;
+}
+.section-packet h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color:#383838;
+    line-height: 31px;
+}
+.section-packet h2 > span:nth-child(1) {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.section-packet h2 > span:nth-child(2) {
+    font-family: Aileron-black, 'Aileron-black';
+    font-size: 1.6rem;
+}
+.panel-paquete {
+    background-color: #F7F7F7;
+    border: #01A4E7 solid 2.5px;
+    border-radius: 10px;
+}
+.panel-paquete li {
+    text-align: center;
+
+}
+.panel-paquete > i {
+    color: #0096DB;
+    font-size: 5.4rem;
+}
+.panel-paquete li > i {
+    color: #F38D0A;
+    margin-right: 8px;
+    font-size: 2rem;
+}
+.panel-paquete span {
+    background-color: #00A9EC;
+    padding: 0px 12.5px 0px 12.5px;
+    color: #F7F7F7;
+    border-radius: 8px;
+    font-size: 1.65rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: 31px;
+}
+.button-info2 {
+    font-family: Aileron-black, 'Aileron-black ';
+    color: #fefbf5;
+    background-color: #FF6D00;
+    font-size: 2.25rem;
+    font-weight: bold;
+    border: none;
+    padding: 0px 55px 0px 55px;
+    border-radius: 10px;
+    line-height: 52px;
+}
+.nini-info h3 {
+    color: #6F6F6F;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+.dudas h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.dudas  p {
+    font-size: 1.08rem;
+}
+.dudas ul > li {
+    color: #6F6F6F;
+    text-align: justify;
+    line-height: 29px;
+    font-size: 1.19rem;
+    font-weight: 600;
+    margin-bottom: 36px;
+    margin-left: -5%
+}
+.container-blue {
+    border-style: dotted;
+    border-width: 4px;
+    border-color: #49C6FD;
+    border-radius: 10px;
+}
+.container-blue h2 {
+    color: #0aa4de;
+    font-weight: 800;
+    font-size: 2.1rem;
+}
+.container-pink {
+    border-style: dotted;
+    border-width: 4px;
+    border-color: #ec7081;
+    border-radius: 10px;
+}
+.container-pink h2 {
+    color: #fc4d60;
+    font-weight: 800;
+    font-size: 2.1rem;
+}
+.significado-boton {
+    background-color: #3FBBEE;
+    width: 61%;
+    max-width: 870px;
+    border-radius: 6px;
+}
+.significado-boton > h3 {
+    color: #FBFEF8;
+    font-size: 2.1rem;
+    line-height: 35px;
+}
+.significado-boton > p {
+    color: #FBFEF8;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 23px;
+}
+.significado-boton .button-info {
+    font-family: Aileron-black, 'Aileron-black ';
+    color: black;
+    background-color: #F3AE00;
+    font-size: 1.34rem;
+    font-weight: bold;
+    border: none;
+    padding: 6px 0px 6px 0px;
+    border-radius: 12px;
+    line-height: 24px;
+    box-shadow: 0px 0px 48px 1px #F3AE00;
+}
+.back-transparente-blue2 {
+    background-color: #1ea5f5e0;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.back-transparente-blue2 .row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.fondoImagen-backgound2-2w {
+    background-image: url(img/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+
+}
+.back-transparente-blue2 a {
+    font-family: Aileron-black, 'Aileron-black ';
+    color: #fefbf5;
+    background-color: #FF5710;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: none;
+    padding: 7px 20px 7px 20px;
+    border-radius: 10px;
+    line-height: 31px;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px -4px black;
+}
+.back-transparente-blue2 > div > h1 {
+    font-family: Aileron-black, 'Aileron-black ';
+    color: #fefbf5;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 47px;
+}
+#noticias-contactos {
+
+}
+#noticias-contactos .titulo-noticias-contactos h2 {
+
+}
+#noticias-contactos .titulo-noticias-contactos h2 > span{
+    color: #f45F16;
+}
+
+
+@media (min-width: 1100px){
+    .pic2 > p {
+        padding-right: 32px;
+    }
+
+    .SeccionDos .pic2 > p {
+        margin-left: 51px;
+    }
+    .section-mano2 h1, .section-mano2 h2, .section-mano2 p{
+        width: 81%;
+        transform: translateX(-15%)
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1000px){
+    .section-porsi p {
+        width: 70%;
+    }
+
+    .bajo-mano1 {
+        margin-top: -40px;
+    }
+}
+
+@media (min-width: 992px){
+    .barra-lateral {
+        border-left-style: solid;
+        border-left-width: 2px;
+        border-left-color: #6d6d6d;
+        border-color: #6d6d6d;
+    }
+
+    .pic2 .imagendama2 {
+        margin-left: 15px;
+    }
+
+    .navbar-nav {
+        transform: translateX(4%);
+    }
+}
+
+@media (min-width: 770px) {
+    .SeccionDos .pic2 > p {
+        margin-top: 52px;
+    }
+
+}
+
+@media (max-width: 992px){
+    .imageWrap {
+        padding-bottom: 37px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        background-color: #ec9d30;
+        color: #ffffff;
+        font-weight: bold;
+        transition: all ease-in 0.5s;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        background-color: #f1bb71;
+        border-radius: 50px;
+    }
+
+    .pic2 > p {
+        line-height: 34px;
+        font-size: 2.2rem;
+        width: 46%;
+    }
+
+    .pic2 > p > span {
+        font-family: Aileron-black, 'Aileron-black ';
+        letter-spacing: 1px;
+        font-size: 2.2rem;
+    }
+
+    .pic > .texto1 {
+        font-size: 1.7rem;
+        width: 75%;
+    }
+    .SeccionDos .pic > .texto1 {
+        width: 76%;
+    }
+    .section-porsi p {
+        width: 94%;
+    }
+    .lista-razones {
+        width: 40%;
+    }
+    .significado-boton {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px){
+    .imageWrap {
+        padding-bottom: 29px;
+    }
+
+    .pic {
+        width: 110% !important;
+        position: relative;
+    }
+
+    .pic2 > p {
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 2rem;
+        width: 80%;
+        margin-top: 5%;
+    }
+
+    .pic2 > p > span {
+        font-family: Aileron-black, 'Aileron-black ';
+        font-size: 2rem;
+    }
+
+    .pic > .texto1 {
+        font-size: 1.7rem;
+        width: 80%;
+    }
+
+    .SeccionDos .pic > .texto1 {
+        width: 76%;
+    }
+
+    .SeccionDos .pic > .button-info {
+        font-size: 1rem;
+    }
+
+    .fondoImagen1-backgound {
+        background-position: center 62px;
+    }
+    .section-mano2 img {
+        width: 100%;
+    }
+    .section-mano2 .imagenmano1 {
+        width: 100%;
+    }
+    .section-mano2 h1 {
+        font-size: 2rem;
+    }
+    .lista-razones.ladoA, .lista-razones.ladoB  {
+        border:none;
+    }
+    .lista-razones {
+        width: 80%;
+    }
+    .lista-razones dl {
+        min-height: 0px;
+    }
+    .significado-boton {
+        width: 90%;
+    }
+}
+@media (max-width: 570px) {
+    .section-mano2 h1, .section-mano2 h2, .section-mano2 p{
+        transform: translateX(0%);
+    }
+    .section-mano2 h1 {
+        font-size: 1.8rem;
+    }
+    .section-mano2 h2{
+        font-size: 1rem;
+    }
+    .lista-razones {
+        width: 90%;
+    }
+    .button-info2 {
+        font-size: 1.8rem;
+        padding: 5px 0px 7px 0px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 270px){
+    .marcas1 img,
+    .marcas2 img {
+        margin-left: 2px !important;
+        margin-right: 2px !important;
+    }
+}
