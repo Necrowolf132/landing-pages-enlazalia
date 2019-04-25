@@ -62,9 +62,14 @@ gulp.task('serve', function() {
         proxy: 'http://localhost/archivos%20de%20maquetado%20/Lainding%20Page%20español'
         // usualy
     });
-    gulp.watch('**/*.css', gulp.series('zip')).on('change', browserSync.reload);
-    gulp.watch('**/*.js', gulp.series('zip')).on('change', browserSync.reload);
+    gulp.watch(['**/*.css','!assetbuild/todo.min.css'], gulp.series(['css','zip'])).on('change', browserSync.reload);
+    gulp.watch(['**/*.js', '!assetbuild/app.js'], gulp.series(['js','zip'])).on('change', browserSync.reload);
     gulp.watch('**/*.html', gulp.series('zip')).on('change', browserSync.reload);
+});
+// Observador
+gulp.task('observador', function () {
+    gulp.watch(['**/*.css','!assetbuild/todo.min.css'], gulp.series('css'));
+    gulp.watch(['**/*.js', '!assetbuild/app.js'], gulp.series('js'));
 });
 
 // ZIP
@@ -73,7 +78,7 @@ gulp.task('zip', function() {
         '**/*.*',
         '!_pgbackup/**',
         '!bootstrap/**',
-        '!assets/**',   
+        '!assets/**',
         '!./LaindingFinal.zip',
         '!.git/**',
         '!js/**',
@@ -87,4 +92,5 @@ gulp.task('zip', function() {
 });
 
 gulp.task('default', gulp.series('files','css','js','zip','serve'));
-
+gulp.task('transpilar', gulp.series('files','css','js','zip'));
+gulp.task('sin_navegador', gulp.series('files','css','js','observador'));
