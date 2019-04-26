@@ -763,9 +763,6 @@ body {
     line-height: 47px;
 }
 
-#noticias-contactos {
-
-}
 #noticias-contactos .titulo-noticias-contactos h2 {
     font-weight: 400;
     font-size: 1.75rem;
@@ -891,6 +888,33 @@ body {
     font-size: .85rem;
     font-weight: 400;
     width: 95%;
+}
+.myalerts {
+		background-color: #FF8A00;
+		border-color: #FF8A00;
+	  box-shadow: 0px 0px 20px -4px black;
+}
+.myalerts > span:nth-child(2) {
+		margin-right: 6px;
+		margin-bottom: .5rem
+}
+.titleMislalertas {
+	margin-bottom: .5rem;
+}
+.myalerts > span {
+		font-size:1.2rem;
+		font-weight: 700;
+		color: black;
+}
+span.mensaje {
+		font-size:1.2rem;
+		font-weight: 600;
+		color: #f7f7f7;
+		line-height: 20px;
+}
+span.mensaje > i {
+		font-size:1.25rem;
+		font-weight: 700;
 }
 
 @media (min-width: 1100px){

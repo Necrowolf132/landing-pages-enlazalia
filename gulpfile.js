@@ -27,7 +27,8 @@ gulp.task('css', function() {
         'assets/css/slick.css',
         'assets/css/bootstrap.css',
         'assets/css/style.css',
-        'assets/css/all.min.css'
+        'assets/css/all.min.css',
+        'assets/css/animate.css'
     ]).pipe(concat('todo.min.css'))
         .pipe(postcss([ autoprefixer() ]))
         .pipe(postcss([ flexboxfixer() ]))
@@ -43,6 +44,7 @@ gulp.task('js', function() {
         'assets/js/migrate.min.js',
         'assets/js/popper.js',
         'bootstrap/js/bootstrap.min.js',
+        'assets/js/bootstrap-notify.min.js',
         'assets/slick/velocity.min.js',
         'assets/slick/slider3d.js',
         'assets/js/mi_script.js'
