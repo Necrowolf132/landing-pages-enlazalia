@@ -70,7 +70,7 @@ $(document).ready(function () {
     });
 
    // Ajax compras
-    var timeAleatorio = Math.floor(Math.random() * (9001 - 1000)) + 1000;
+    var timeAleatorio = Math.floor(Math.random() * (9001 - 4000)) + 4000;
     var data = $.ajax({
         method: "GET",
         url: "assetbuild/dataApr.json",
@@ -86,7 +86,7 @@ $(document).ready(function () {
         if(numver<1000) {
             numver = 1000;
         }
-        timeAleatorio = Math.floor(Math.random() * (9001 - 1000)) + 1000;
+        timeAleatorio = Math.floor(Math.random() * (9001 - 4000)) + 4000;
         setTimeout(function () {
             var sujetoaleatorio = Math.floor(Math.random() * (301 - 1)) + 1;
             var myData = data.responseJSON;

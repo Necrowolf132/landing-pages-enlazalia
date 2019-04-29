@@ -394,9 +394,6 @@ body {
 #carouselEnlazados .carousel-item {
     background-color: #f7f7f7;
 }
-#carouselEnlazados .carousel-inner {
-    min-height: 425px;
-}
 #carouselEnlazados .carousel-item  img {
     width: 252px;
 }
@@ -458,8 +455,8 @@ body {
 
 .section-porsi p {
     width: 61%;
-    font-size: 0.8rem;
     font-weight: 500;
+    font-size: .98rem;
     line-height: 24px;
 }
 
@@ -475,7 +472,7 @@ body {
     font-weight: normal;
     position: relative;
     z-index: 0;
-    margin-top: -80px;
+    margin-top: -48px;
 }
 
 .bajo-mano1 h2 {
@@ -954,9 +951,6 @@ span.mensaje > i {
         margin-left: 15px;
     }
 
-    .navbar-nav {
-        transform: translateX(4%);
-    }
 }
 
 @media (min-width: 770px) {
@@ -970,19 +964,6 @@ span.mensaje > i {
     .imageWrap {
         padding-bottom: 37px;
     }
-
-    .navbar-light .navbar-nav .nav-link {
-        background-color: #ec9d30;
-        color: #ffffff;
-        font-weight: bold;
-        transition: all ease-in 0.5s;
-    }
-
-    .navbar-light .navbar-nav .nav-link:hover {
-        background-color: #f1bb71;
-        border-radius: 50px;
-    }
-
     .pic2 > p {
         line-height: 34px;
         font-size: 2.2rem;
