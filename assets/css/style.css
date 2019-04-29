@@ -391,11 +391,12 @@ body {
 .Section2  .carousel-control-prev-icon {
     background-image: url("img/fechaIzquierda.png") !important;
 }
-
 #carouselEnlazados .carousel-item {
     background-color: #f7f7f7;
 }
-
+#carouselEnlazados .carousel-inner {
+    min-height: 425px;
+}
 #carouselEnlazados .carousel-item  img {
     width: 252px;
 }
