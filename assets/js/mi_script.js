@@ -2,72 +2,6 @@
 $(document).ready(function () {
     var aqui= $("#sacar-imagen").offset().top;
     console.log(aqui);
-    $('a[href^="#Proyecto"]').click(function() {
-        var destino = $(this.hash);
-        if (destino.length == 0) {
-            destino = $('a[name="' + this.hash.substr(1) + '"]');
-        }
-        if (destino.length == 0) {
-            destino = $('html');
-        }
-        $('html, body').animate({ scrollTop: destino.offset().top }, 3000);
-        return false;
-    });
-    $('a[href^="#Home"]').click(function() {
-        var destino = $(this.hash);
-        if (destino.length == 0) {
-            destino = $('a[name="' + this.hash.substr(1) + '"]');
-        }
-        if (destino.length == 0) {
-            destino = $('html');
-        }
-        $('html, body').animate({ scrollTop: destino.offset().top }, 4000);
-        return false;
-    });
-    $('a[href^="#Planes"]').click(function() {
-        var destino = $(this.hash);
-        if (destino.length == 0) {
-            destino = $('a[name="' + this.hash.substr(1) + '"]');
-        }
-        if (destino.length == 0) {
-            destino = $('html');
-        }
-        $('html, body').animate({ scrollTop: destino.offset().top }, 3500);
-        return false;
-    });
-    $('a[href^="#noticias-contactos"]').click(function() {
-        var destino = $(this.hash);
-        if (destino.length == 0) {
-            destino = $('a[name="' + this.hash.substr(1) + '"]');
-        }
-        if (destino.length == 0) {
-            destino = $('html');
-        }
-        $('html, body').animate({ scrollTop: destino.offset().top }, 1000);
-        return false;
-    });
-    $('a[href^="#Contactos"]').click(function() {
-        var destino = $(this.hash);
-        if (destino.length == 0) {
-            destino = $('a[name="' + this.hash.substr(1) + '"]');
-        }
-        if (destino.length == 0) {
-            destino = $('html');
-        }
-        $('html, body').animate({ scrollTop: destino.offset().top }, 3500);
-        return false;
-    });
-    $('a[href^="#Packs"]').click(function() {
-        var destino = $(this.hash);
-        if (destino.length == 0) {
-            destino = $('a[name="' + this.hash.substr(1) + '"]');
-        }
-        if (destino.length == 0) {
-            destino = $('html');
-        }
-        $('html, body').animate({ scrollTop: destino.offset().top }, 2700);
-        return false;
-    });
 
    // Ajax compras
     var timeAleatorio = Math.floor(Math.random() * (9001 - 4000)) + 4000;
@@ -78,7 +12,8 @@ $(document).ready(function () {
     }).always(function () {
         console.log('Se ejecuto');
     }).done(
-        generate(timeAleatorio)
+        // generate(timeAleatorio)
+        generate(undefined)
     ).fail(function () {
         console.log('Fallo el recurso');
     });
@@ -88,7 +23,7 @@ $(document).ready(function () {
         }
         timeAleatorio = Math.floor(Math.random() * (9001 - 4000)) + 4000;
         setTimeout(function () {
-            var sujetoaleatorio = Math.floor(Math.random() * (301 - 1)) + 1;
+            var sujetoaleatorio = Math.floor(Math.random() * (299 - 1)) + 1;
             var myData = data.responseJSON;
             $.notify({
                 // options

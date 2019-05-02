@@ -464,6 +464,7 @@ body {
     width: 41.5vw;
     position: relative;
     z-index: 3;
+    transform: translateY(4%);
 }
 
 .bajo-mano1 {
@@ -516,6 +517,12 @@ body {
 }
 .section-mano2 p {
     line-height: 27px;
+}
+.bg-info {
+    background-color: #03a9f4 !important;
+}
+.bg-info .opinion-img {
+    max-width: 150px;
 }
 .section-razones {
     background-color: #f7f7f7;
@@ -995,6 +1002,9 @@ span.mensaje > i {
     .contenerdor-blue-liner>div {
         padding-top: 25px;
         padding-bottom: 25px;
+    }
+    .imagenmano1 img {
+        transform: translateY(21%);
     }
 }
 

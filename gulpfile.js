@@ -24,7 +24,6 @@ gulp.task('files', function() {
 // CSS
 gulp.task('css', function() {
     return gulp.src([
-        'assets/css/slick.css',
         'assets/css/bootstrap.css',
         'assets/css/style.css',
         'assets/css/all.min.css',
