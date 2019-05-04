@@ -12,8 +12,7 @@ $(document).ready(function () {
     }).always(function () {
         console.log('Se ejecuto');
     }).done(
-        // generate(timeAleatorio)
-        generate(undefined)
+        generate(timeAleatorio)
     ).fail(function () {
         console.log('Fallo el recurso');
     });

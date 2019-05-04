@@ -612,14 +612,40 @@ body {
     font-size: 1.6rem;
     font-weight: 700;
 }
-.section-packet h2 > span:nth-child(2) {
+.section-packet h2 > span:nth-child(2), .section-packet h5 > span {
     font-family: Aileron-black, 'Aileron-black';
     font-size: 1.6rem;
 }
 .panel-paquete {
+    cursor: pointer;
+    opacity: 0.65;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     background-color: #F7F7F7;
     border: #01A4E7 solid 2.5px;
     border-radius: 10px;
+    max-width: 219px;
+    box-shadow: 0px 0px 26px -6px black;
+    transition: opacity 450ms ease-in-out, -webkit-transform 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: transform 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 450ms ease-in-out;
+    transition: transform 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 450ms ease-in-out, -webkit-transform 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -webkit-transform: scale(0.9) translateZ(0px);
+    transform: scale(0.9) translateZ(0px);
+}
+.panel-paquete:nth-child(2) {
+    opacity: 1;
+    -webkit-transform: scale(1) translateZ(0px);
+    transform: scale(1) translateZ(0px);
+}
+.panel-paquete:hover {
+    opacity: 1;
+    -webkit-transform: scale(1) translateZ(0px);
+    transform: scale(1) translateZ(0px);
+}
+.panel-paquete:hover {
+    opacity: 1;
+    -webkit-transform: scale(1) translateZ(0px);
+    transform: scale(1) translateZ(0px);
 }
 .panel-paquete li {
     text-align: center;
@@ -703,17 +729,22 @@ body {
     width: 61%;
     max-width: 870px;
     border-radius: 6px;
+		box-shadow: 0 0 26px -6px #000;
 }
 .significado-boton > h3 {
     color: #FBFEF8;
     font-size: 2.1rem;
     line-height: 35px;
 }
-.significado-boton > p {
+.significado-boton li {
     color: #FBFEF8;
     font-size: 1.3rem;
     font-weight: 600;
     line-height: 23px;
+}
+.significado-boton li > i {
+    color: #F77C01;
+    margin-right: 8px;
 }
 .significado-boton .button-info {
     font-family: Aileron-black, 'Aileron-black ';
@@ -777,48 +808,6 @@ body {
     color: #f45F16;
     font-weight: bold;
 }
-#noticias-contactos .noticias-noticias-contactos {
-    min-height: 270px;
-}
-#noticias-contactos .noticias-noticias-contactos > div:nth-child(1) {
-    background-image: url("img/fodo-noticias-1.png");
-    padding: 23px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 194px;
-    height: 267px;
-}
-#noticias-contactos .noticias-noticias-contactos > div:nth-child(2) {
-    background-image: url("img/fodo-noticias-2.png");
-    padding: 23px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 194px;
-    height: 267px;
-}
-#noticias-contactos .noticias-noticias-contactos > div:nth-child(3) {
-    background-image: url("img/fodo-noticias-3.png");
-    padding: 23px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 194px;
-    height: 267px;
-}
-#noticias-contactos .noticias-noticias-contactos > div > h3 > a {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #FAB300;
-}
-#noticias-contactos .noticias-noticias-contactos > div > h3 > a:hover {
-    text-decoration: none !important;
-}
-#noticias-contactos .noticias-noticias-contactos > div > h3 > a >span{
-    color:#fefbf5;
-    font-weight: 700;
-}
 #noticias-contactos .correo-noticias-contactos > div > h3 {
     font-size: 4.8rem;
     font-weight: 700;
@@ -865,11 +854,7 @@ body {
     border-right: .05rem solid #1BA0D6;
 }
 .contenerdor-blue-liner > div:nth-child(3) {
-    border-left: .05rem solid #1BA0D6;
-    border-right: .05rem solid #1BA0D6;
-}
-.contenerdor-blue-liner > div:nth-child(4) {
-    border-left: .05rem solid #1BA0D6;
+		border-left: .05rem solid #1BA0D6;
 }
 .contenerdor-blue-liner > div {
     padding-top: 40px;
@@ -920,6 +905,16 @@ span.mensaje {
 span.mensaje > i {
 		font-size:1.25rem;
 		font-weight: 700;
+}
+.reloj {
+		background-color: #FF6D00;
+		max-width: 600px;
+		border-radius: 6px;
+		box-shadow: 0 0 26px -6px #000;
+}
+.reloj h1 {
+    font-size: 6.5rem;
+    font-weight: 900;
 }
 
 @media (min-width: 1100px){
@@ -1100,6 +1095,9 @@ span.mensaje > i {
     .contenerdor-blue-liner>div {
         padding-top: 10px;
         padding-bottom:10px;
+    }
+    .reloj h1 {
+        font-size: 3.5rem;
     }
 }
 

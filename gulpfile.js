@@ -4,7 +4,7 @@ const concat        = require('gulp-concat');
 const postcss       = require('gulp-postcss');
 const autoprefixer  = require('autoprefixer');
 const flexboxfixer  = require('postcss-flexboxfixer');
-const uglify        = require('gulp-uglify');
+const terser        = require('gulp-terser');
 const minifycss     = require('gulp-minify-css');
 const browserSync   = require('browser-sync').create();
 const gulp          = require('gulp');
@@ -42,14 +42,13 @@ gulp.task('js', function() {
         'assets/js/jquery.min.js',
         'assets/js/migrate.min.js',
         'assets/js/popper.js',
+        'assets/js/myrelojback.js',
         'bootstrap/js/bootstrap.min.js',
         'assets/js/bootstrap-notify.min.js',
-        'assets/slick/velocity.min.js',
-        'assets/slick/slider3d.js',
         'assets/js/mi_script.js'
         ])
         .pipe(concat('app.js'))
-        .pipe(uglify())
+        .pipe(terser())
         .pipe(gulp.dest('assetbuild'))
         .pipe(browserSync.stream());
 });
