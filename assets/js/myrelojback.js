@@ -30,4 +30,4 @@ const contadorRegresoivo = (Fechafutura, elemenHTML, MensajeFinal) => {
     }, 1000);
 };
 
-contadorRegresoivo('May 07 2019 21:00:00 GMT+0200', 'reloj', 'La Oferta ha Finalizado');
+contadorRegresoivo('May 12 2019 21:00:00 GMT+0200', 'reloj', 'La Oferta ha Finalizado');

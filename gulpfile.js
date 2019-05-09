@@ -59,7 +59,7 @@ gulp.task('serve', function() {
         // server: './'' // default server
         // proxy: 'http://localhost:8888/' // mamp
         // la localhost de la instalacion de jommla
-        proxy: 'http://localhost/archivos%20de%20maquetado%20/Lainding%20Page%20español'
+        proxy: 'http://localhost/archivos%20de%20maquetado/Lainding%20Page%20espa%C3%B1ol'
         // usualy
     });
     gulp.watch(['**/*.css','!assetbuild/todo.min.css'], gulp.series(['css','zip'])).on('change', browserSync.reload);

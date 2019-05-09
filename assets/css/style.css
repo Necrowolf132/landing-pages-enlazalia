@@ -475,17 +475,25 @@ body {
     z-index: 0;
     margin-top: -48px;
 }
-
 .bajo-mano1 h2 {
-    color: #000000;
-    font-weight: bold;
-}
-
-.bajo-mano1 li {
-    line-height: 35px;
-    font-size: 0.85rem;
+    color: #FE9100;
     font-weight: 700;
-    color: #2C3844;
+    font-size: 1.9rem;
+    margin-bottom: 25px;
+}
+.bajo-mano1 > div > div {
+    background-color: #f7f7f7;
+    border-radius: 40px;
+    box-shadow: 0 0 26px -6px #000;
+}
+.bajo-mano1 .lista-razones {
+    width: 50%;
+}
+.bajo-mano1 .lista-razones dt {
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.45rem;
+    line-height: 24px;
 }
 
 .bajo-mano1 .fas {
@@ -1069,6 +1077,9 @@ span.mensaje > i {
     }
     .contenerdor-blue-liner > div:nth-child(2) > ul {
         height: auto !important;
+    }
+    .bajo-mano1 .lista-razones {
+        width: 90%;
     }
 }
 @media (max-width: 570px) {

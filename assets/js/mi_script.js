@@ -2,7 +2,17 @@
 $(document).ready(function () {
     var aqui= $("#sacar-imagen").offset().top;
     console.log(aqui);
-
+    $('a[href^="#Packs"]').click(function() {
+        var destino = $(this.hash);
+        if (destino.length == 0) {
+            destino = $('a[name="' + this.hash.substr(1) + '"]');
+        }
+        if (destino.length == 0) {
+            destino = $('html');
+        }
+        $('html, body').animate({ scrollTop: destino.offset().top }, 2000);
+        return false;
+    });
    // Ajax compras
     var timeAleatorio = Math.floor(Math.random() * (9001 - 4000)) + 4000;
     var data = $.ajax({
