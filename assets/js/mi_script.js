@@ -14,7 +14,7 @@ $(document).ready(function () {
         return false;
     });
    // Ajax compras
-    var timeAleatorio = Math.floor(Math.random() * (9001 - 4000)) + 4000;
+    var timeAleatorio = Math.floor(Math.random() * (9000 - 4000)) + 4000;
     var data = $.ajax({
         method: "GET",
         url: "assetbuild/dataApr.json",
@@ -30,7 +30,7 @@ $(document).ready(function () {
         if(numver<1000) {
             numver = 1000;
         }
-        timeAleatorio = Math.floor(Math.random() * (9001 - 4000)) + 4000;
+        timeAleatorio = Math.floor(Math.random() * (12001 - 8000)) + 8000;
         setTimeout(function () {
             var sujetoaleatorio = Math.floor(Math.random() * (299 - 1)) + 1;
             var myData = data.responseJSON;
@@ -39,7 +39,8 @@ $(document).ready(function () {
                 icon: 'fa fa-exclamation-triangle',
                 title: 'Atención!',
                 message: '<i>'+myData[sujetoaleatorio].nombre + ' ' +myData[sujetoaleatorio].apellido + '</i>,<br>' + myData[sujetoaleatorio].correo +
-                    '<br> <i>se a Enlazado!!!</i>'
+                    '<br> <i>ha aprovechado la oferta.</i>' +
+                    '<br> <i>Recuerda que es por tiempo limitada</i>'
             },{
                 // settings
                 element: 'body',
@@ -56,7 +57,7 @@ $(document).ready(function () {
                 spacing: 10,
                 z_index: 1031,
                 delay: 2000,
-                timer: 2000,
+                timer: 4000,
                 url_target: '_blank',
                 mouse_over: 'pause',
                 animate: {
