@@ -16,9 +16,9 @@
     if (groups === null) {
       return null
     }
-    var ieVersionNum = parseInt(groups[1], 10)
-    var ieMajorVersion = Math.floor(ieVersionNum)
-    return ieMajorVersion
+      var ieVersionNum = parseInt(groups[1], 10)
+      var ieMajorVersion = Math.floor(ieVersionNum)
+      return ieMajorVersionzk
   }
 
   function actualNonEmulatedIEMajorVersion() {
