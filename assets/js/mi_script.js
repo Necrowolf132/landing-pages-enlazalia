@@ -30,7 +30,7 @@ $(document).ready(function () {
     if (numver < 1000) {
       numver = 1000
     }
-    timeAleatorio = Math.floor(Math.random() * (12001 - 8000)) + 8000
+    timeAleatorio = Math.floor(Math.random() * (27000 - 15000)) + 15000
     setTimeout(function () {
       var sujetoaleatorio = Math.floor(Math.random() * (299 - 1)) + 1
       var myData = data.responseJSON
@@ -38,7 +38,7 @@ $(document).ready(function () {
         // options
         icon: 'fa fa-exclamation-triangle',
         title: 'Atención!',
-        message: '<i>' + myData[sujetoaleatorio].nombre + ' ' + myData[sujetoaleatorio].apellido + '</i>,' + '<br> <i>ha aprovechado la oferta.</i>' + '<br> <i>Recuerda que es por tiempo limitada</i>'
+        message: '<i>' + myData[sujetoaleatorio].nombre + ' ' + myData[sujetoaleatorio].apellido + '</i>,' + '<br> <i>ha aprovechado la oferta.</i>' + '<br> <i>Recuerda que es por tiempo limitado</i>'
       }, {
         // settings
         element: 'body',

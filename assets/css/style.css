@@ -670,8 +670,8 @@ body {
     transform: scale(0.9) translateZ(0px);
 }
 .panel-paquete:nth-child(2) {
-    -webkit-transform: scale(1) translateZ(0px);
-    transform: scale(1) translateZ(0px);
+    -webkit-transform: scale(0.97) translateZ(0px);
+    transform: scale(0.97) translateZ(0px);
 }
 .panel-paquete:hover {
     -webkit-transform: scale(1) translateZ(0px);
